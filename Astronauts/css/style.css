@@ -19,13 +19,16 @@ body{
   margin-right: 10px;
 }
 
-.float{
-  float: right;
+#btn{
+  padding-left: 20px;
 }
 
 #container1{
   width: 90%;
-  margin:2%;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
   border: 3px solid #111;
   background-color: #BDD5EA;
   border-radius: 15px;
@@ -34,7 +37,14 @@ body{
 
 #search{
   width: 85%;
-  margin-left: 5%;
+  margin-left: auto;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#searchable{
+  width: 85%;
+  margin-left: auto;
   border-radius: 10px;
   padding: 5px;
 }
