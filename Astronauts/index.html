@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel='stylesheet' href="css/style.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Astronaut database</title>
   </head>
   <body onload='addAstronaut()'>
@@ -33,10 +34,14 @@
         </label>
         <input type='text' class='form-control margin' id='power' placeholder="superpower">
       </div>
-      <button class='btn-primary float' type='submit'>Add</button>
+      <div class='form-group' id='btn'>
+        <button class='btn-primary' type='submit'>Add</button>
+      </div>
     </form>
   </div>
-  <input type='text' id='search' class='form-group' onkeyup='searchTable()' placeholder="Search by name...">
+  <div id='searchable'>
+    <input type='text' id='search' class='form-group' onkeyup='searchTable()' placeholder="Search by name...">
+  </div>
   <table id='myTable'>
     <tr class='header'>
       <th style='width: 25%;' onclick='sortTable(0)'>Name</th>
@@ -48,7 +53,6 @@
     <tbody id='takeMe'>
     </tbody>
   </table>
-  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   </body>
