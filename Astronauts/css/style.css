@@ -1,0 +1,69 @@
+body{
+  height: 100%;
+  background-image: url('../img/nightsky.jpeg');
+  background-size: 100%;
+  font-family: Arial, helvetica, sans-serif;
+  color: white;
+}
+
+.form-control{
+    padding: 5px;
+}
+
+.astronaut{
+  padding: 10px;
+}
+
+.margin{
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.float{
+  float: right;
+}
+
+#container1{
+  width: 90%;
+  margin:2%;
+  border: 3px solid #111;
+  background-color: #BDD5EA;
+  border-radius: 15px;
+}
+
+
+#search{
+  width: 85%;
+  margin-left: 5%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+table{
+  width: 98%;
+  margin: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+th{
+  cursor: pointer;
+}
+
+#myTable{
+  border: 2px solid #ddd;
+}
+
+tbody tr:nth-child(even){
+  background-color: #BDD5EA;
+}
+
+tbody tr:nth-child(odd){
+  background-color: white;
+}
+
+
+.header{
+  background-color: #BDD5EA;
+  border-bottom: 1px solid #BDD5EA;
+}

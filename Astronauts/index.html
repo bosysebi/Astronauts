@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Astronaut database</title>
+  </head>
+  <body onload='addAstronaut()'>
+  <div id='container1'>
+    <form class='form-inline' id='astronauts'>
+      <div class='form-group'>
+        <label>
+          <b> Name:</b>
+        </label>
+        <input type='text' class='form-control margin' id='name' placeholder="name">
+      </div>
+      <div class='form-group'>
+        <label>
+          <b> Surname:</b>
+        </label>
+        <input type='text' class='form-control margin' id='surname' placeholder="surname">
+      </div>
+      <div class='form-group'>
+        <label>
+          <b> DOB:</b>
+        </label>
+        <input type='date' class='form-control margin' id='dob' placeholder="date of birth">
+      </div>
+      <div class='form-group'>
+        <label>
+          <b> Superpower:</b>
+        </label>
+        <input type='text' class='form-control margin' id='power' placeholder="superpower">
+      </div>
+      <button class='btn-primary float' type='submit'>Add</button>
+    </form>
+  </div>
+  <input type='text' id='search' class='form-group' onkeyup='searchTable()' placeholder="Search by name...">
+  <table id='myTable'>
+    <tr class='header'>
+      <th style='width: 25%;' onclick='sortTable(0)'>Name</th>
+      <th style='width: 25%;' onclick='sortTable(1)'>Surname</th>
+      <th style='width: 25%;' onclick='sortTable(2)'>DOB</th>
+      <th style='width: 20%;' onclick='sortTable(3)'>Superpower</th>
+      <th style='width: 5%'>Remove</th>
+    </tr>
+    <tbody id='takeMe'>
+    </tbody>
+  </table>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>
